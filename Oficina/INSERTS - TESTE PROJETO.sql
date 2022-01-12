@@ -1,0 +1,234 @@
+/*INSERTS*/
+/*INSERTS NO MINIMO 10 REGISTROS - COMECE PELA TABELA CARRO*/
+
+/*CARROS*/
+INSERT INTO CARRO 
+(IDCARRO, MODELO, PLACA)VALUES 
+(NULL,'FIESTA','DVC0873');
+
+INSERT INTO CARRO 
+(IDCARRO, MODELO, PLACA)VALUES 
+(NULL,'PALIO','ADG7845');
+
+INSERT INTO CARRO
+(IDCARRO, MODELO, PLACA)VALUES 
+(NULL,'CELTA','FAS0215');
+
+INSERT INTO CARRO 
+(IDCARRO, MODELO, PLACA)VALUES 
+(NULL,'HB20','ASD4872');
+
+INSERT INTO CARRO 
+(IDCARRO, MODELO, PLACA)VALUES 
+(NULL,'ONIX','DLL4596');
+
+INSERT INTO CARRO 
+(IDCARRO, MODELO, PLACA)VALUES 
+(NULL,'KICKS','HEJ8743');
+
+INSERT INTO CARRO 
+(IDCARRO, MODELO, PLACA)VALUES 
+(NULL,'CRETA','AFW7800');
+
+INSERT INTO CARRO 
+(IDCARRO, MODELO, PLACA)VALUES 
+(NULL,'CORSA','SSD1878');
+
+INSERT INTO CARRO 
+(IDCARRO, MODELO, PLACA)VALUES 
+(NULL,'KA','JON1515');
+
+INSERT INTO CARRO 
+(IDCARRO, MODELO, PLACA)VALUES 
+(NULL,'XC40','EFT3636');
+
+/*MARCA*/
+
+INSERT INTO MARCA 
+VALUES(NULL, 'FORD');
+
+INSERT INTO MARCA 
+VALUES(NULL, 'FIAT');
+
+INSERT INTO MARCA 
+VALUES(NULL, 'GM');
+
+INSERT INTO MARCA 
+VALUES(NULL, 'HIUNDAY');
+
+INSERT INTO MARCA 
+VALUES(NULL, 'NISSAN');
+
+INSERT INTO MARCA 
+VALUES(NULL, 'VOLVO');
+
+/*COR*/
+
+INSERT INTO COR 
+VALUES(NULL, 'PRETO');
+
+INSERT INTO COR  
+VALUES(NULL, 'BRANCO');
+
+INSERT INTO COR  
+VALUES(NULL, 'DOURADO');
+
+INSERT INTO COR  
+VALUES(NULL, 'CINZA');
+
+INSERT INTO COR  
+VALUES(NULL, 'VERMELHO');
+
+INSERT INTO COR  
+VALUES(NULL, 'AZUL');
+
+
+/*CLIENTE*/
+INSERT INTO CLIENTE
+(IDCLIENTE,NOME,SEXO)VALUES
+(NULL,'RODRIGO','M');
+
+INSERT INTO CLIENTE
+(IDCLIENTE,NOME,SEXO)VALUES
+(NULL,'RAIMUNDO','M');
+
+INSERT INTO CLIENTE
+(IDCLIENTE,NOME,SEXO)VALUES
+(NULL,'GLAIR','F');
+
+INSERT INTO CLIENTE
+(IDCLIENTE,NOME,SEXO)VALUES
+(NULL,'JORGE','M');
+
+INSERT INTO CLIENTE
+(IDCLIENTE,NOME,SEXO)VALUES
+(NULL,'GISELE','F');
+
+INSERT INTO CLIENTE
+(IDCLIENTE,NOME,SEXO)VALUES
+(NULL,'ALISSON','M');
+
+INSERT INTO CLIENTE
+(IDCLIENTE,NOME,SEXO)VALUES
+(NULL,'ADRIANO','M');
+
+INSERT INTO CLIENTE
+(IDCLIENTE,NOME,,SEXO)VALUES
+(NULL,'PAULO','M');
+
+INSERT INTO CLIENTE
+(IDCLIENTE,NOME,SEXO)VALUES
+(NULL,'MARINA','F');
+
+INSERT INTO CLIENTE
+(IDCLIENTE,NOME,SEXO)VALUES
+(NULL,'LORRAINE','F');
+
+INSERT INTO CLIENTE
+(IDCLIENTE,NOME,SEXO)VALUES
+(NULL,'LUCAS','M');
+
+/*TELEFONE*/
+INSERT INTO TELEFONE 
+(IDTELEFONE,TIPO, NUMERO)
+VALUES(NULL,'CEL','11992251250');
+
+INSERT INTO TELEFONE 
+(IDTELEFONE,TIPO, NUMERO)
+VALUES(NULL,'CEL','119985487845');
+
+INSERT INTO TELEFONE 
+(IDTELEFONE,TIPO, NUMERO)
+VALUES(NULL,'CEL','11989458712');
+
+INSERT INTO TELEFONE 
+(IDTELEFONE,TIPO, NUMERO)
+VALUES(NULL,'COM','119001245841');
+
+INSERT INTO TELEFONE 
+(IDTELEFONE,TIPO, NUMERO)
+VALUES(NULL,'CEL','11989562745');
+
+INSERT INTO TELEFONE 
+(IDTELEFONE,TIPO, NUMERO)
+VALUES(NULL,'RES','1124107719');
+
+INSERT INTO TELEFONE 
+(IDTELEFONE,TIPO, NUMERO)
+VALUES(NULL,'RES','1129613827');
+
+INSERT INTO TELEFONE 
+(IDTELEFONE,TIPO, NUMERO)
+VALUES(NULL,'COM','11912345795');
+
+INSERT INTO TELEFONE 
+(IDTELEFONE,TIPO, NUMERO)
+VALUES(NULL,'CEL','11998745154');
+
+
++-----------+----------+------+----------+
+| IDCLIENTE | NOME     | SEXO | ID_CARRO |
++-----------+----------+------+----------+
+|         1 | RODRIGO  | M    |     NULL |
+|         2 | RAIMUNDO | M    |     NULL |
+|         3 | GLAIR    | F    |     NULL |
+|         4 | JORGE    | M    |     NULL |
+|         5 | GISELE   | F    |     NULL |
+|         6 | ALISSON  | M    |     NULL |
+|         7 | ADRIANO  | M    |     NULL |
+|         8 | MARINA   | F    |     NULL |
+|         9 | LORRAINE | F    |     NULL |
+|        10 | LUCAS    | M    |     NULL |
++-----------+----------+------+----------+
+
++------------+------+--------------+------------+
+| IDTELEFONE | TIPO | NUMERO       | ID_CLIENTE |
++------------+------+--------------+------------+
+|          1 | CEL  | 11992251250  |       NULL |
+|          2 | CEL  | 119985487845 |       NULL |
+|          3 | CEL  | 11989458712  |       NULL |
+|          4 | COM  | 119001245841 |       NULL |
+|          5 | CEL  | 11989562745  |       NULL |
+|          6 | RES  | 1124107719   |       NULL |
+|          7 | RES  | 1129613827   |       NULL |
+|          8 | COM  | 11912345795  |       NULL |
+|          9 | CEL  | 11998745154  |       NULL |
++------------+------+--------------+------------+
+
++-------+----------+
+| IDCOR | COR      |
++-------+----------+
+|     6 | AZUL     |
+|     2 | BRANCO   |
+|     4 | CINZA    |
+|     3 | DOURADO  |
+|     1 | PRETO    |
+|     5 | VERMELHO |
++-------+----------+
+
++---------+--------+---------+----------+
+| IDCARRO | MODELO | PLACA   | ID_MARCA |
++---------+--------+---------+----------+
+|       1 | FIESTA | DVC0873 |        1 |
+|       2 | PALIO  | ADG7845 |        2 |
+|       3 | CELTA  | FAS0215 |        3 |
+|       4 | HB20   | ASD4872 |        4 |
+|       5 | ONIX   | DLL4596 |        3 |
+|       6 | KICKS  | HEJ8743 |        5 |
+|       7 | CRETA  | AFW7800 |        4 |
+|       8 | CORSA  | SSD1878 |        3 |
+|       9 | KA     | JON1515 |        1 |
+|      10 | XC40   | EFT3636 |        6 |
++---------+--------+---------+----------+
+
++---------+---------+
+| IDMARCA | MARCA   |
++---------+---------+
+|       2 | FIAT    |
+|       1 | FORD    |
+|       3 | GM      |
+|       4 | HIUNDAY |
+|       5 | NISSAN  |
+|       6 | VOLVO   |
++---------+---------+
+
